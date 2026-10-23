@@ -45,6 +45,7 @@
     var id = 3;
     var personajePrincipal = $gameActors.actor(1);
     var companero = $gameActors.actor(id);
+// para corregirlo poner que el usuario secundario vaya antes del actor principal
     if (companero.isAlive() && companero.mp >= 5 && personajePrincipal.mp >= 5 && $gameParty.members().indexOf(companero) != 0) {
     value = true;
     if (BattleManager.isInputting() && BattleManager.actor() !== companero) {
